@@ -64,43 +64,68 @@ public class Main {
 	        
 	        /*System.out.println("The fruit: \"" + fruit + "\"");
 	        System.out.println("The fruit: \"" + fruit + "\" width character \"a\" replaced width character \"o\": " + fruitWithLetter_A_replaceWidth_O);*/
-	   
+	        
 	   // 8. Ejercicios  
 	        String text = "Adventure";
 
 	        // TODO: Check the length using length() and print the length
 	        int printText = text.length();
-	        System.out.println("The length of adventure is: " + printText);
+	        //System.out.println("The length of adventure is: " + printText);
 
 	        // TODO: Get the character at position 3 and print the character      
 	        char positionLetter = text.charAt(3);
-	        System.out.println("The character at positions 3 is: " +positionLetter);
+	        //System.out.println("The character at positions 3 is: " +positionLetter);
 
 	        // TODO: Get a part of the String from position 1 to 4 and print the string
 	        String positionsLetter = text.substring(1, 4);
-	        System.out.println("The substring from position 1 to 4 is: " + positionsLetter);
+	        //System.out.println("The substring from position 1 to 4 is: " + positionsLetter);
 
 	        String anotherText= "Adventure";
 
 	        // TODO: Compare text with anotherText using equals() and print the output
 	        boolean result = text.equals(anotherText);
-	        System.out.println("Comparing Strings: " + result);
+	        //System.out.println("Comparing Strings: " + result);
 
 	        // TODO: Change to uppercase using toUpperCase() and print the converted string
 	        String textToUppercase = text.toUpperCase();
-	        System.out.println("The text to Uppercase: " + textToUppercase);
+	        //System.out.println("The text to Uppercase: " + textToUppercase);
 
 	        // TODO: Change to lowercase using toLowerCase() and print the converted string
 	        String textToLowercase = textToUppercase.toLowerCase();
-	        System.out.println("The text to Lowercase: " + textToLowercase);
+	        //System.out.println("The text to Lowercase: " + textToLowercase);
 
 	        // TODO: Check if it contains "vent" using contains() and print the output
 	        boolean hasVent = text.contains("vent");
-	        System.out.println("Is there a substring like vent in \" "+ text +" \": " + hasVent);
+	        //System.out.println("Is there a substring like vent in \" "+ text +" \": " + hasVent);
 
 	        // TODO: Replace 'e' with 'a' and print the output
 	        String text_E_replace_A = anotherText.replace('e', 'a');
-	        System.out.println("Character replaced: "+text_E_replace_A);
+	        //System.out.println("Character replaced: "+text_E_replace_A);
+	        
+       // 9. Ejercicio
+	        /*
+	        Complete these steps in the interactive code block:
+    		1. Declare and initialize the variable firstName = “Harry”.
+    		2. Declare and initialize the variable lastName = “Grow”.
+    		3. Declare and initialize the variable email = “harry.grow@example.com”.
+			4. Using the method toLowerCase() and the + operator, concatenate firstName and lastName after converting it to lowercase, then assign it to the variable username. Hint: The variable username should contain “harrygrow”.
+			5. Correct the email address from “example.com” to “gmail.com”. Hint: Use the replace() method to change the email address to “harry.grow@gmail.com”.
+			6. Find the index of ‘@’ in the email address. You can use the indexOf() method for this purpose.
+	        */
+	       String firstName = "Harry"; 
+	       String lastName = "Grow";
+	       String email = "harry.grow@example.com";
+	       
+	       String firstNameLower = firstName.toLowerCase();
+	       String lastNameLower = lastName.toLowerCase();
+	       String username = firstNameLower + lastNameLower;
+	       System.out.println("The username is: " + username);
+	       
+	       String emailReplace = email.replace("@example", "@gmail");
+	       System.out.println("Username mail: " + emailReplace);
+	       
+	        
+	     
 
 	}
 }
