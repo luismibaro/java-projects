@@ -46,16 +46,61 @@ public class Main {
 	        String fruitInUpperCase = fruit.toUpperCase();
 	        String fruitInLowerCase = fruit.toLowerCase();
 
-	        System.out.println("The fruit: \"" + fruit + "\"");
+	        /*System.out.println("The fruit: \"" + fruit + "\"");
 	        System.out.println("The fruit converted to uppercase: \"" + fruitInUpperCase + "\"");
-	        System.out.println("The fruit converted to lowercase: \"" + fruitInLowerCase + "\"");
+	        System.out.println("The fruit converted to lowercase: \"" + fruitInLowerCase + "\"");*/
 			
 	   // 6. contains(sequence)
 	        boolean hasAna = fruit.contains("ana");
 	        boolean hasBrooks = fruit.contains("brooks");
 
-	        System.out.println("The fruit: \"" + fruit + "\"");
+	        /*System.out.println("The fruit: \"" + fruit + "\"");
 	        System.out.println("The fruit \"" + fruit + "\" contains the substring \"ana\": " + hasAna);
-	        System.out.println("The fruit \"" + fruit + "\" contains the substring \"brooks\": " + hasBrooks);
+	        System.out.println("The fruit \"" + fruit + "\" contains the substring \"brooks\": " + hasBrooks);*/
+	       
+	   // 7. replace(oldChar, newChar)
+	        
+	        String fruitWithLetter_A_replaceWidth_O = fruit.replace('a', 'o');
+	        
+	        /*System.out.println("The fruit: \"" + fruit + "\"");
+	        System.out.println("The fruit: \"" + fruit + "\" width character \"a\" replaced width character \"o\": " + fruitWithLetter_A_replaceWidth_O);*/
+	   
+	   // 8. Ejercicios  
+	        String text = "Adventure";
+
+	        // TODO: Check the length using length() and print the length
+	        int printText = text.length();
+	        System.out.println("The length of adventure is: " + printText);
+
+	        // TODO: Get the character at position 3 and print the character      
+	        char positionLetter = text.charAt(3);
+	        System.out.println("The character at positions 3 is: " +positionLetter);
+
+	        // TODO: Get a part of the String from position 1 to 4 and print the string
+	        String positionsLetter = text.substring(1, 4);
+	        System.out.println("The substring from position 1 to 4 is: " + positionsLetter);
+
+	        String anotherText= "Adventure";
+
+	        // TODO: Compare text with anotherText using equals() and print the output
+	        boolean result = text.equals(anotherText);
+	        System.out.println("Comparing Strings: " + result);
+
+	        // TODO: Change to uppercase using toUpperCase() and print the converted string
+	        String textToUppercase = text.toUpperCase();
+	        System.out.println("The text to Uppercase: " + textToUppercase);
+
+	        // TODO: Change to lowercase using toLowerCase() and print the converted string
+	        String textToLowercase = textToUppercase.toLowerCase();
+	        System.out.println("The text to Lowercase: " + textToLowercase);
+
+	        // TODO: Check if it contains "vent" using contains() and print the output
+	        boolean hasVent = text.contains("vent");
+	        System.out.println("Is there a substring like vent in \" "+ text +" \": " + hasVent);
+
+	        // TODO: Replace 'e' with 'a' and print the output
+	        String text_E_replace_A = anotherText.replace('e', 'a');
+	        System.out.println("Character replaced: "+text_E_replace_A);
+
 	}
 }
