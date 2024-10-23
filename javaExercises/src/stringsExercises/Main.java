@@ -119,12 +119,12 @@ public class Main {
 	       String firstNameLower = firstName.toLowerCase();
 	       String lastNameLower = lastName.toLowerCase();
 	       String username = firstNameLower + lastNameLower;
-	       System.out.println("The username is: " + username);
+//	       System.out.println("The username is: " + username);
 	       
 	       String emailReplace = email.replace("@example", "@gmail");
-	       System.out.println("Username mail: " + emailReplace);
+//	       System.out.println("Username mail: " + emailReplace);
 	       
-	        
+	   // 10. Ejecicio 
 	     
 
 	}
